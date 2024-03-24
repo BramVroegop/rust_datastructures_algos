@@ -47,17 +47,4 @@ fn main() {
     for n in arr {
         println!("{}", n.value);
     }
-
-    let mut list = deque::Deque::<i32>::new();
-    for i in 1..100 {
-        list.push_back(i);
-    }
-
-    for _ in 1..50 {
-        list.pop_back().unwrap();
-    }
-
-    list.print();
-
-    drop(list);
 }
