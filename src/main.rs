@@ -1,4 +1,3 @@
-mod deque;
 mod hashtable;
 mod linked_list;
 mod sorting;
