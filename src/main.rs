@@ -1,3 +1,4 @@
+mod deque;
 mod hashtable;
 mod linked_list;
 mod sorting;
@@ -45,5 +46,15 @@ fn main() {
 
     for n in arr {
         println!("{}", n.value);
+    }
+
+    let mut dq = deque::Deque::<i32>::new();
+
+    dq.queue_back(32);
+    dq.queue_front(56);
+    dq.queue_front(66);
+
+    while let Some(value) = dq.pop_back() {
+        println!("{:#?}", value)
     }
 }
